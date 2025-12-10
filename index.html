@@ -3,17 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Box Generator</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="inputContainer">
-      <input id="input" type="text" />
-      <button id="button">Add</button>
+    <!-- Top Control Card -->
+    <div class="card">
+      <h2>Box Generator</h2>
+
+      <div class="inputContainer">
+        <!-- number input -->
+        <input id="input" type="number" placeholder="Number of boxes" min="1" />
+
+        <!-- shape select -->
+        <select id="shapeSelect">
+          <option value="square">Square</option>
+          <option value="circle">Circle</option>
+        </select>
+
+        <!-- color picker -->
+        <div class="colorBox">
+          <span>Color</span>
+          <input id="colorPicker" type="color" />
+        </div>
+
+        <!-- add button -->
+        <button id="button" type="button">Add</button>
+      </div>
     </div>
-    <div id="boxContainer">
-     
-    </div>
+
+    <!-- Boxes container -->
+    <div id="boxContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
-  <script src="./script.js"></script>
 </html>
